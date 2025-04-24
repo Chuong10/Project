@@ -1,7 +1,7 @@
 <?php
 return array(
     'base' => '/DLC/dlc/',
-    'assets' => '/DLC/dlc/assets',
+    'assets' => '/DLC/dlc/assets/',
     'baseURL' => 'http://localhost/DLC/dlc/',
     'db' => array(
         'host' => 'localhost',
