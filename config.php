@@ -1,11 +1,11 @@
 <?php
 return array(
-    'base' => '/DLC/dlc/',
-    'assets' => '/DLC/dlc/assets/',
-    'baseURL' => 'http://localhost/DLC/dlc/',
+    'base' => '/PROJECT/Project/',
+    'assets' => '/PROJECT/Project/assets/',
+    'baseURL' => 'http://localhost/PROJECT/Project/',
     'db' => array(
         'host' => 'localhost',
-        'name' => 'productdb2',
+        'name' => 'product2',
         'username' => 'root',
         'password' => ''
     )
