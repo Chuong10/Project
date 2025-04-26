@@ -31,7 +31,7 @@ $assets = $config['assets'];
     <link rel="icon" type="image/x-icon" href="<?= $base ?>/assets/assets/favicon.ico" />
 
     <!-- Bootstrap icons-->
-    <link href="https://terraria.shop/cdn/shop/articles/banner-1.webp?v=1743083623" rel="stylesheet" />
+    <link href="C:/xampp/htdocs/Project/assets/assets/favicon.ico" rel="stylesheet" />
 
     <!-- Core theme CSS -->
     <link href="<?= $base ?>assets/css/styles.css" rel="stylesheet" />

@@ -9,7 +9,7 @@ $urlArr = explode('/', $url);
 // var_dump($urlArr);
 // die;
 // echo $url;
-$controlerClassName = $urlArr[0] . "Controller";
+$controlerClassName = $urlArr[0] . "Controller";dx
 
 $controller = new $controlerClassName();
 call_user_func([$controller, $urlArr[1]]);
