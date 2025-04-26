@@ -5,7 +5,7 @@ return array(
     'baseURL' => 'http://localhost/PROJECT/Project/',
     'db' => array(
         'host' => 'localhost',
-        'name' => 'product2',
+        'name' => 'productdb2',
         'username' => 'root',
         'password' => ''
     )
