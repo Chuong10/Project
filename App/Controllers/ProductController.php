@@ -50,4 +50,9 @@ class ProductController
         header("Location:index");
         exit;
     }
+
+    public function detail($id)
+    {
+      echo $id;   
+    }
 }
