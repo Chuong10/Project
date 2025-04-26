@@ -35,16 +35,16 @@ include './App/Views/Layout/homeHeader.php';
                     ?>
                         <tr>
                             <td><?= $item['Name'] ?></td>
-                            <td><?= number_format($item['Price'], 0) ?> VNĐ</td>
+                            <td><?= number_format($item['Price'], 3) ?> VNĐ</td>
                             <td><?= $item['quantity'] ?></td>
-                            <td><?= number_format($total, 0) ?> VNĐ</td>
+                            <td><?= number_format($total, 3) ?> VNĐ</td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
                 <tfoot>
                     <tr class="table-secondary">
                         <th colspan="3" class="text-end">Tổng cộng:</th>
-                        <th><?= number_format($grandTotal, 0) ?> VNĐ</th>
+                        <th><?= number_format($grandTotal, 3) ?> VNĐ</th>
                     </tr>
                 </tfoot>
             </table>
