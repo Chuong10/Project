@@ -21,10 +21,16 @@ $assets = $config['assets'];
     <title>Terraria Shop</title>
     <style>
         header {
-  background-image: url('"C:\Users\Admin\OneDrive\Pictures\Saved Pictures\tumblr_n7lcn1fcsl1sdqpmho1_1280.jpg"');
+  background-image: url('"C:\xampp\htdocs\Project\assets\images\BGnavbar.jpg"');
   background-size: cover;
   background-position: center;
 }
+     .navbar {
+        background-image: url('C:\xampp\htdocs\Project\assets\images');
+        background-size: cover;
+        background-position: center;
+    } 
+
     </style>
 
     <!-- Favicon-->

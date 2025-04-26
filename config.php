@@ -1,8 +1,8 @@
 <?php
 return array(
-    'base' => '/DLC/dlc/',
-    'assets' => '/DLC/dlc/assets/',
-    'baseURL' => 'http://localhost/DLC/dlc/',
+    'base' => '/Project/',
+    'assets' => '/Project/assets/',
+    'baseURL' => 'http://localhost/Project/',
     'db' => array(
         'host' => 'localhost',
         'name' => 'productdb2',
