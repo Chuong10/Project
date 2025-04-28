@@ -21,7 +21,7 @@
                         <td>#<?= $order['id'] ?></td>
                         <td><?= date('d/m/Y H:i', strtotime($order['order_date'])) ?></td>
                         <td><?= $order['status'] ?></td>
-                        <td><?= number_format($order['total_amount'], 0) ?> VNĐ</td>
+                        <td><?= number_format($order['total_amount'], 3) ?> VNĐ</td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
