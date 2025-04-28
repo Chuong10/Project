@@ -4,6 +4,27 @@ $baseURL = $config['baseURL'];
 ?>
 
 <?php include './App/Views/Layout/homeheader.php'; ?>
+<style>
+    body {
+        background-image: url('<?= $baseURL ?>assets/images/login-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh; /* Chiều cao full màn hình */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-container {
+        background: rgba(255, 255, 255, 0.85);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        width: 100%;
+        max-width: 500px;
+    }
+</style>
 
 <div class="container mt-5 mb-5" style="max-width: 500px;">
     <h2 class="text-center mb-4">🔐 Đăng nhập</h2>
