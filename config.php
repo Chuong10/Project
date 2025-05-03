@@ -1,5 +1,6 @@
 <?php
 return array(
+
     'base' => '/Project/',
     'assets' => '/Project/assets/',
     'baseURL' => 'http://localhost/Project/',
