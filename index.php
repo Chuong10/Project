@@ -4,6 +4,7 @@ foreach (glob("App/Controllers/*.php") as $filename) {
     require_once $filename;
 }
 
+
 $url = $_GET['url'];
 $urlArr = explode('/', $url);
 // var_dump($urlArr);

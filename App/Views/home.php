@@ -19,7 +19,7 @@ include_once 'Layout/homeheader.php';
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="<?= $product['More'] ?>">Xem chi tiết</a>
+                                    <a class="btn btn-outline-dark mt-auto" href="<?= $baseURL ?>product/detail/<?= $product['Id'] ?>">Xem chi tiết</a>
                                 </div>
                             </div>
                             <div class="text-center">
