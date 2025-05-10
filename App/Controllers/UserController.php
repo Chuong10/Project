@@ -5,6 +5,23 @@ require_once './App/Model/UserModel.php';
 
 class UserController
 {
+
+    public function logout()
+    {
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        session_unset();
+        session_destroy();
+
+        $config = require './config.php';
+        $baseURL = $config['baseURL'];
+
+        header('Location: ' . $baseURL . 'user/login');
+        exit;
+    }
+
+    
     public function index()
     {
         include __DIR__ . '/../Views/User/index.php';

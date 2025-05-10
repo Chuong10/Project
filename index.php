@@ -12,7 +12,11 @@ $urlArr = explode('/', $url);
 $controlerClassName = $urlArr[0] . "Controller";
 
 $controller = new $controlerClassName();
-call_user_func([$controller, $urlArr[1]]);
+// call_user_func([$controller, $urlArr[1]]);
+
+$params = array_slice($urlArr, 2);
+call_user_func_array([$controller, $urlArr[1]], $params);
+
 
 
 // if ($urlArr[0] == 'product') {

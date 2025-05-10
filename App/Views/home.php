@@ -14,12 +14,12 @@ include_once 'Layout/homeheader.php';
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <h5 class="fw-bolder"><?= $product['Name'] ?></h5>
-                                    <?= number_format($product['Price'], 0) ?> VNĐ
+                                    <?= number_format($product['Price'], 3) ?> VNĐ
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#">Xem chi tiết</a>
+                                    <a class="btn btn-outline-dark mt-auto" href="<?= $product['More'] ?>">Xem chi tiết</a>
                                 </div>
                             </div>
                             <div class="text-center">
