@@ -3,7 +3,7 @@ section {
   padding-bottom: 2rem;
 }
 
-.card {
+/* .card {
   border: 1px solid #e1e1e1;
   transition: transform 0.2s ease;
 }
@@ -11,6 +11,29 @@ section {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.card {
+  background-color: #000;
+  color: white;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.card .btn-outline-dark {
+  color: #ffffff;
+  border-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.card .btn-outline-dark:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .card-img-top {
@@ -21,3 +44,12 @@ section {
 .text-center .btn {
   margin-top: 0.5rem;
 }
+/*đổi nền của product card*/
+/* .Section-Bg {
+  background-image: url("/Project/assets/images/BGProduct.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+} */
