@@ -3,3 +3,5 @@
             <p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p>
         </div>
     </footer>
+    </body>
+    </html>

@@ -3,10 +3,9 @@ $config = require 'config.php';
 $baseURL = $config['baseURL'];
 ?>
 
-<?php include './App/Views/Layout/homeheader.php'; ?>
-    
+<?php include './App/Views/Layout/homeheader.php'; ?> 
 
-<div class="login-container">
+<div class="container mt-5 mb-5" style="max-width: 500px;">
     <h2 class="text-center mb-4">🔐 Đăng nhập</h2>
 
     <?php if (!empty($error)): ?>
