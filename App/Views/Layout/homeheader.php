@@ -64,6 +64,22 @@ $assets = $config['assets'];
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+.navbar-brand {
+    color: black !important;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+/* Tùy chỉnh màu chữ navbar */
+.navbar-nav .nav-link {
+    color: black !important;
+      font-size: 1.1rem;
+}
+
+/* Xóa màu vàng mặc định của Bootstrap khi link đang active */
+.navbar-nav .nav-link.active {
+    color: black !important;
+    font-weight: bold;
+    background-color: transparent !important; /* !important để ghi đè */
+}
 </style>
 <body>
     
@@ -81,7 +97,7 @@ $assets = $config['assets'];
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?= $baseURL?>/home/index">Home</a></li>
+                <li class="nav-item"><a class="nav-link active"  aria-current="page" href="<?= $baseURL?>/home/index">Home</a></li>
 
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
 
@@ -128,8 +144,8 @@ $assets = $config['assets'];
     <header class="custom-header py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Shop For Terraria Wolrd</h1>
-                <p class="lead fw-normal mb-0" style="color:rgb(0, 0, 0);">With This Origin Terraria</p>
+                <h1 class="display-5 fw-bolder" style="color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);">Shop For Terraria World</h1>
+                <p class="lead fw-normal mb-0" style="color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);">With This Origin Terraria</p>
             </div>
         </div>
     </header>
