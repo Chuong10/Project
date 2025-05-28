@@ -1,4 +1,5 @@
 section {
+  background-color: #000000; /* Màu nền mới, ví dụ xanh đen */
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -15,7 +16,7 @@ section {
 
 .card {
   background-color: #000;
-  color: white;
+  color: rgb(238, 247, 238);
   border: none;
   transition: transform 0.2s ease;
 }
@@ -26,14 +27,14 @@ section {
 }
 
 .card .btn-outline-dark {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #08ef23;
+  border-color: #efe6e6;
   transition: all 0.3s ease;
 }
 
 .card .btn-outline-dark:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #3d453b;
+  color: #0a0a0a;
 }
 
 .card-img-top {
@@ -44,12 +45,18 @@ section {
 .text-center .btn {
   margin-top: 0.5rem;
 }
-/*đổi nền của product card*/
-/* .Section-Bg {
-  background-image: url("/Project/assets/images/BGProduct.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-} */
+
+.product-price {
+  background: #eafaf1;
+  color: #27ae60;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 0.25rem 1.1rem;
+  margin: 0.7rem auto 0.7rem auto;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 12px rgba(39,174,96,0.10);
+  display: inline-block;
+  border: 1.5px solid #b7eacb;
+  text-align: center;
+}

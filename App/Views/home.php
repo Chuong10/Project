@@ -3,7 +3,7 @@ include_once 'Layout/homeheader.php';
 ?>
 
     <!-- Section: Products -->
-    <section class="bg-light py-5">
+    <section class="bg-dark-subtle py-5">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 <?php foreach ($productList as $product): ?>
@@ -14,7 +14,7 @@ include_once 'Layout/homeheader.php';
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <h5 class="fw-bolder"><?= $product['Name'] ?></h5>
-                                    <?= number_format($product['Price'], 3) ?> VNĐ
+                                    <div class="product-price"><?= number_format($product['Price'], 3, ',', '.') ?> VNĐ</div>
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
