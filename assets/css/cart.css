@@ -15,7 +15,7 @@ h1,
 .cart-title {
   font-weight: 700;
   font-size: 2rem;
-  color: #f3f3f3;
+  color: #ffffff;
   letter-spacing: 1px;
 }
 
@@ -28,19 +28,19 @@ h1,
 .table th {
   font-weight: 600;
   font-size: 1.1rem;
-  color: #ffffff;
+  color: #f3f3f3;
   background: #000000;
 }
 
 .table td {
   font-size: 1rem;
-  color: #100101;
+  color: #080808;
 }
 
 /* Tổng cộng */
 .table tfoot th {
   font-size: 1.1rem;
-  color: #f8f8f8;
+  color: #050101;
   font-weight: bold;
 }
 
