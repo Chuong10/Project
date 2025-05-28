@@ -38,6 +38,33 @@ $assets = $config['assets'];
 
 </head>
 
+<style>
+.rainbow-button {
+    background: linear-gradient(270deg, #ff416c, #ff4b2b, #fffc00, #00ff87, #007cf0, #7928ca, #ff416c);
+    background-size: 400% 400%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-weight: bold;
+    animation: rainbowAnim 6s ease infinite;
+    transition: transform 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.rainbow-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px white;
+}
+
+@keyframes rainbowAnim {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+</style>
 <body>
     
 <!-- Navigation-->
@@ -75,14 +102,14 @@ $assets = $config['assets'];
             <!-- Login/Logout -->
             <div class="d-flex align-items-center">
                 <?php if (isset($_SESSION['user_id'])): ?>
-                    <a class="btn btn-outline-primary me-2" href="<?= $baseURL ?>user/logout">Logout</a>
+                    <a class="rainbow-button" href="<?= $baseURL ?>user/logout">Logout</a>
                 <?php else: ?>
-                    <a class="btn btn-outline-primary me-2" href="<?= $baseURL ?>user/login">Login</a>
+                    <a class="rainbow-button" href="<?= $baseURL ?>user/login">Login</a>
                 <?php endif; ?>
 
                 <!-- Cart Button -->
                 <form method="post" action="<?= $baseURL . 'cart/index' ?>" class="d-flex">
-                    <button class="btn btn-outline-dark" type="submit">
+                    <button class="rainbow-button" type="submit">
                         <i class="bi-cart-fill me-1"></i>
                         Cart
                         <span class="badge bg-dark text-white ms-1 rounded-pill">
