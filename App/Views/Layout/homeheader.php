@@ -40,7 +40,7 @@ $assets = $config['assets'];
 
 <style>
 .rainbow-button {
-    background: linear-gradient(270deg, #ff416c, #ff4b2b, #fffc00, #00ff87, #007cf0, #7928ca, #ff416c);
+    background: linear-gradient(270deg,rgb(242, 6, 6), #ff4b2b, #fffc00, #00ff87, #007cf0, #7928ca, #ff416c);
     background-size: 400% 400%;
     color: white;
     border: none;

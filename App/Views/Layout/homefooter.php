@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row align-items-center gy-3">
             <div class="col-md-4 text-center text-md-start mb-2 mb-md-0">
-                <img src="\PROJECT\assets\images\ronald-van-egdom-crimson720.jpg" alt="Terraria Shop Logo" style="height:48px;">
+                <img src="/PROJECT/assets/images/Icon.jpg" alt="Terraria Shop Logo" style="height:48px;">
             </div>
             <div class="col-md-4 text-center mb-2 mb-md-0">
                 <div class="footer-social">

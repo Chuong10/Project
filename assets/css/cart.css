@@ -28,19 +28,19 @@ h1,
 .table th {
   font-weight: 600;
   font-size: 1.1rem;
-  color: #f3f3f3;
+  color: #ffffff;
   background: #000000;
 }
 
 .table td {
   font-size: 1rem;
-  color: #080808;
+  color: #fdfdfd;
 }
 
 /* Tổng cộng */
 .table tfoot th {
   font-size: 1.1rem;
-  color: #050101;
+  color: #efefef;
   font-weight: bold;
 }
 
