@@ -34,6 +34,7 @@ $assets = $config['assets'];
     <link href="<?= $base ?>assets/css/stylehomeheader.css" rel="stylesheet" />
     <link href="<?= $base ?>assets/css/stylehome.css" rel="stylesheet" />
     <link href="<?= $base ?>assets/css/stylehomefooter.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fredoka:700&display=swap" rel="stylesheet">
 
 </head>
 
