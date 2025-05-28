@@ -1,0 +1,44 @@
+/* Đổi font toàn trang giỏ hàng */
+body, .container, .table {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    color: #000000;
+}
+
+/* Tiêu đề giỏ hàng */
+h1, .cart-title {
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #f3f3f3;
+    letter-spacing: 1px;
+}
+
+/* Bảng giỏ hàng */
+.table th {
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background: #000000;
+}
+
+.table td {
+    font-size: 1rem;
+    color: #100101;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Tổng cộng */
+.table tfoot th {
+    font-size: 1.1rem;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+/* Nút thanh toán */
+.btn-secondary, .shop-button {
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}

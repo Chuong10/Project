@@ -55,8 +55,29 @@ section {
   padding: 0.25rem 1.1rem;
   margin: 0.7rem auto 0.7rem auto;
   letter-spacing: 1px;
-  box-shadow: 0 2px 12px rgba(39,174,96,0.10);
+  box-shadow: 0 2px 12px rgba(39, 174, 96, 0.1);
   display: inline-block;
   border: 1.5px solid #b7eacb;
   text-align: center;
+}
+
+/* Bảng giỏ hàng màu trắng */
+.table,
+.table thead,
+.table tbody,
+.table tfoot,
+.table tr,
+.table th,
+.table td {
+  background-color: #fff !important;
+  color: #fff9f9 !important;
+}
+
+.container .table {
+  background-color: #fff !important;
+}
+.container .table th,
+.container .table td {
+  background-color: #fff !important;
+  color: #fff9f9 !important;
 }
