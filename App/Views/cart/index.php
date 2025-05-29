@@ -12,7 +12,6 @@ include './App/Views/Layout/homeheader.php';
 <!-- Section: Cart -->
 <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
-        <h2 class="mb-4 text-center cart-title">🛒 Giỏ hàng của bạn</h2>
 
         <h1 class="mb-4 text-light text-center">Giỏ hàng của bạn</h1>
 

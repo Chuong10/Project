@@ -1,0 +1,28 @@
+.admin-table-wrapper {
+  background: rgba(255, 255, 255, 0.05); /* nền trong suốt mờ */
+  backdrop-filter: blur(8px); /* hiệu ứng mờ kính */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  color: black;
+}
+/* Làm bảng trong suốt */
+.table-admin {
+  background-color: transparent !important;
+  border-collapse: collapse;
+}
+
+/* Làm các ô bảng trong suốt */
+.admin-table-wrapper th,
+.admin-table-wrapper td {
+  background-color: transparent !important;
+  color: black; /* chữ */
+  border-color: rgba(255, 255, 255, 0.3); /* viền mờ nhẹ */
+}
+
+/* Nền phần tiêu đề bảng (thead) */
+.admin-table-wrapper thead {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(6px);
+}
