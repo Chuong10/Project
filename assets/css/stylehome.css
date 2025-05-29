@@ -1,8 +1,8 @@
-section {
-  background-color: #000000; /* Màu nền mới, ví dụ xanh đen */
-  padding-top: 2rem;
+/* section {
+  /* background-color: transparent; */
+/* padding-top: 2rem;
   padding-bottom: 2rem;
-}
+} */
 
 /* .card {
   border: 1px solid #e1e1e1;
@@ -27,7 +27,7 @@ section {
 }
 
 .card .btn-outline-dark {
-  color: #08ef23;
+  color: #02e8e0;
   border-color: #efe6e6;
   transition: all 0.3s ease;
 }
@@ -48,7 +48,7 @@ section {
 
 .product-price {
   background: #eafaf1;
-  color: #27ae60;
+  color: #000000;
   font-size: 1.4rem;
   font-weight: bold;
   border-radius: 12px;
@@ -69,15 +69,28 @@ section {
 .table tr,
 .table th,
 .table td {
-  background-color: #fff !important;
-  color: #111 !important;   /* Đổi lại thành màu đen */
+  background-image: url("/Project/assets/images/BGheader.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  color: #111 !important;
 }
 
+
 .container .table {
-  background-color: #eeeeee !important;
+  background-image: url("/Project/assets/images/BGheader.jpg") !important;
+  background-size: cover;
+  background-position: center;
 }
+
 .container .table th,
 .container .table td {
   background-color: #fff !important;
-  color: #111 !important;   /* Đổi lại thành màu đen */
+  color: #111 !important; /* Đổi lại thành màu đen */
+}
+
+.background-image {
+  background-image: url("/Project/assets/images/BGheader.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

@@ -12,7 +12,7 @@ include './App/Views/Layout/homeHeader.php';
 <!-- Section: Cart -->
 <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
-        <h1 class="mb-4 text-light text-center">Giỏ hàng của bạn</h1>
+        <h1 class="cart-title text-center">Giỏ hàng của bạn</h1>
 
         <?php if (empty($cartItems)): ?>
             <div class="alert alert-info text-center">
