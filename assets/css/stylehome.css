@@ -1,8 +1,20 @@
 /* section {
-  /* background-color: transparent; */
-/* padding-top: 2rem;
+background-color: transparent;
+padding-top: 2rem;
+=======
+section {
+  background-color: #000000;
+  padding-top: 2rem;
   padding-bottom: 2rem;
-} */
+}
+*/
+body {
+  background-image: url("/PROJECT/assets/images/do-any-of-these-backgrounds-illicit-a-sense-of-longing-to-v0-oo2n2p0jd63b1.jpg"); /* chỉnh lại đường dẫn ảnh của bạn */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* giữ cố định khi cuộn */
+  background-position: center;
+}
 
 /* .card {
   border: 1px solid #e1e1e1;
@@ -14,51 +26,84 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 } */
 
+/* Card sản phẩm kiểu Terraria.shop */
 .card {
-  background-color: #000;
-  color: rgb(238, 247, 238);
+  background: rgba(117, 215, 232, 0.1);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(21, 43, 233, 0.13);
   border: none;
-  transition: transform 0.2s ease;
+  overflow: hidden;
+  transition: transform 0.18s, box-shadow 0.18s;
+  color: #21dcdc;
+  backdrop-filter: blur(2px);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-}
-
-.card .btn-outline-dark {
-  color: #02e8e0;
-  border-color: #efe6e6;
-  transition: all 0.3s ease;
-}
-
-.card .btn-outline-dark:hover {
-  background-color: #3d453b;
-  color: #0a0a0a;
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(44,62,80,0.18);
 }
 
 .card-img-top {
-  height: 250px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 210px;
   object-fit: cover;
+  margin-bottom: 0.5rem;
 }
 
-.text-center .btn {
-  margin-top: 0.5rem;
+.card-body {
+  padding: 1.3rem 1.2rem 1rem 1.2rem;
+}
+
+.card-title,
+.card .fw-bolder {
+  font-family: 'Fredoka', 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.13rem;
+  color: #f5f5f5;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
 }
 
 .product-price {
-  background: #eafaf1;
-  color: #000000;
-  font-size: 1.4rem;
+  background: #6666d4;
+  color: #ecefef;
+  font-size: 1.15rem;
   font-weight: bold;
-  border-radius: 12px;
-  padding: 0.25rem 1.1rem;
-  margin: 0.7rem auto 0.7rem auto;
+  border-radius: 10px;
+  padding: 0.18rem 1.1rem;
+  margin: 0.5rem auto 0.7rem auto;
   letter-spacing: 1px;
-  box-shadow: 0 2px 12px rgba(39, 174, 96, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   display: inline-block;
-  border: 1.5px solid #b7eacb;
+  border: 1.5px solid #13a6ea;
   text-align: center;
+}
+
+.card-footer {
+  background: transparent;
+  border: none;
+  padding-top: 0;
+}
+
+.card .btn-outline-dark {
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Fredoka', 'Montserrat', Arial, sans-serif;
+  color: #0e9bd8;
+  border: 2px solid #ffffff;
+  transition: all 0.2s;
+  padding: 0.45rem 1.3rem;
+  font-size: 1rem;
+}
+
+.card .btn-outline-dark:hover {
+  background: linear-gradient(90deg, #1c5dbe, #33bbe4);
+  color: #fff;
+  border-color: #0891e6;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.13);
 }
 
 /* Bảng giỏ hàng màu trắng */
@@ -73,8 +118,9 @@
   background-size: cover;
   background-position: center;
   color: #111 !important;
+  background-color: #fff !important;
+  color: #111 !important; /* Đổi lại thành màu đen */
 }
-
 
 .container .table {
   background-image: url("/Project/assets/images/BGheader.jpg") !important;
@@ -93,4 +139,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: #000000 !important;
+  color: #111 !important; /* Đổi lại thành màu đen */
 }

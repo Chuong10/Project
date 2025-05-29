@@ -4,7 +4,7 @@ $base = $config['base'];
 $baseURL = $config['baseURL'];
 $assets = $config['assets'];
 
-include './App/Views/Layout/homeHeader.php';
+include './App/Views/Layout/homeheader.php';
 ?>
 
 <link rel="stylesheet" href="/Project/assets/css/cart.css">
@@ -13,14 +13,16 @@ include './App/Views/Layout/homeHeader.php';
 <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
         <h1 class="cart-title text-center">Giỏ hàng của bạn</h1>
-
         <?php if (empty($cartItems)): ?>
             <div class="alert alert-info text-center">
-                Chưa có sản phẩm nào trong giỏ hàng.
+                Chưa có sản phẩm nào trong giỏ hàng. <a href="<?= $baseURL?>home/index">Tiếp tục mua sắm</a>
             </div>
         <?php else: ?>
             <?php $grandTotal = 0; ?>
 
+            <table class="table table-bordered text-center align-middle cart-table">
+                <thead class="table-dark">
+=======
             <table class="table table-bordered text-center align-middle">
                 <thead>
                     <tr>
@@ -59,4 +61,4 @@ include './App/Views/Layout/homeHeader.php';
     </div>
 </section>
 
-<?php include './App/Views/Layout/homeFooter.php'; ?>
+<?php include './App/Views/Layout/homefooter.php'; ?>

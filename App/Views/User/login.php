@@ -32,10 +32,32 @@ $baseURL = $config['baseURL'];
         </div>
         <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
     </form>
-
+         <!-- admin đăng kí -->
     <div class="text-center mt-3">
         Chưa có tài khoản? <a href="<?= $baseURL ?>user/register">Đăng ký</a>
     </div>
+    <div class="text-center mt-4">
+    <button class="btn btn-outline-secondary" id="toggle-admin">🔑 Đăng ký admin</button>
+
+    <form action="<?= $baseURL ?>admin/register" method="POST" id="admin-form" style="display: none;" class="mt-3">
+        <div class="mb-3">
+            <label>Mật khẩu nội bộ</label>
+            <input type="password" name="internal_key" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-warning w-100">Vào trang quản trị</button>
+    </form>
+
 </div>
 
+
+</div>
+<script>
+    document.getElementById('toggle-admin').addEventListener('click', function () {
+        const form = document.getElementById('admin-form');
+        form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    });
+</script>
+
+
+<?php include './App/Views/Layout/homefooter.php'; ?>
 

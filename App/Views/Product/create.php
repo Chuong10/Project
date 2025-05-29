@@ -1,4 +1,4 @@
-<?php include_once __DIR__ . '/../Layout/header.php'; ?>
+<?php include_once __DIR__ . '/../Layout/homeheader.php'; ?>
 
 <div class="panel panel-default">
     <div class="panel-heading">Thêm sản phẩm mới</div>
@@ -24,4 +24,4 @@
     </div>
 </div>
 
-<?php include_once __DIR__ . '/../Layout/footer.php'; ?>
+<?php include_once __DIR__ . '/../Layout/homefooter.php'; ?>

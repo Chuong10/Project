@@ -1,6 +1,5 @@
 <?php
-include_once __DIR__ . "/../Layout/header.php";
-include_once __DIR__ . "/../Layout/header.php";
+include_once __DIR__ . "/../Layout/homeheader.php";
 
 // var_dump($productList);
 
@@ -50,4 +49,4 @@ include_once __DIR__ . "/../Layout/header.php";
 </div>
 
 <?php
-include_once __DIR__ . "/../Layout/footer.php";
+include_once __DIR__ . "/../Layout/homefooter.php";

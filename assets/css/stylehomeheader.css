@@ -45,3 +45,20 @@
   display: flex;
   align-items: center;
 } */
+
+.navbar-brand {
+  color: black !important;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+/* Tùy chỉnh màu chữ navbar */
+.navbar-nav .nav-link {
+  color: black !important;
+  font-size: 1.1rem;
+}
+
+/* Xóa màu vàng mặc định của Bootstrap khi link đang active */
+.navbar-nav .nav-link.active {
+  color: black !important;
+  font-weight: bold;
+  background-color: transparent !important; /* !important để ghi đè */
+}
