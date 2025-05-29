@@ -7,10 +7,14 @@ $assets = $config['assets'];
 include './App/Views/Layout/homeheader.php';
 ?>
 
+<link rel="stylesheet" href="/Project/assets/css/cart.css">
+
 <!-- Section: Cart -->
 <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
         <h2 class="mb-4 text-center cart-title">🛒 Giỏ hàng của bạn</h2>
+
+        <h1 class="mb-4 text-light text-center">Giỏ hàng của bạn</h1>
 
         <?php if (empty($cartItems)): ?>
             <div class="alert alert-info text-center">
@@ -28,7 +32,7 @@ include './App/Views/Layout/homeheader.php';
                         <th>Thành tiền</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="table-light">
                     <?php foreach ($cartItems as $item): 
                         $total = $item['Price'] * $item['quantity'];
                         $grandTotal += $total;
@@ -51,7 +55,7 @@ include './App/Views/Layout/homeheader.php';
 
             <!-- Nút checkout -->
             <div class="text-end">
-                <a href="<?= $baseURL ?>order/checkout" class="btn btn-success">🛍️ Tiến hành thanh toán</a>
+                <a href="<?= $baseURL ?>order/checkout" class="btn btn-secondary"> Tiến hành thanh toán</a>
             </div>
         <?php endif; ?>
     </div>

@@ -3,10 +3,19 @@ $config = require 'config.php';
 $baseURL = $config['baseURL'];
 ?>
 
-<?php include './App/Views/Layout/homeheader.php'; ?> 
 
-<div class="container mt-5 mb-5" style="max-width: 500px;">
-    <h2 class="text-center mb-4">🔐 Đăng nhập</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="<?= $baseURL ?>assets/css/login.css"> <!-- Liên kết CSS riêng -->
+</head>
+
+<div class="login-container">
+    <h2> Đăng nhập</h2>
 
     <?php if (!empty($error)): ?>
         <div class="alert alert-danger"><?= $error ?></div>
@@ -40,6 +49,7 @@ $baseURL = $config['baseURL'];
 
 </div>
 
+
 </div>
 <script>
     document.getElementById('toggle-admin').addEventListener('click', function () {
@@ -50,3 +60,4 @@ $baseURL = $config['baseURL'];
 
 
 <?php include './App/Views/Layout/homefooter.php'; ?>
+
