@@ -1,7 +1,15 @@
 section {
-  background-color: #000000; /* Màu nền mới, ví dụ xanh đen */
+  /* background-color: #000000;  */
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+body {
+  background-image: url("/Project/assets/images/BGheader.jpg"); /* chỉnh lại đường dẫn ảnh của bạn */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* giữ cố định khi cuộn */
+  background-position: center;
 }
 
 /* .card {
@@ -15,9 +23,11 @@ section {
 } */
 
 .card {
-  background-color: #000;
-  color: rgb(238, 247, 238);
-  border: none;
+  background-color: rgba(255, 255, 255, 0.1); /* Nền trắng trong suốt */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Viền mờ nhẹ */
+  backdrop-filter: blur(6px); /* Làm mờ nền sau */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Đổ bóng đẹp */
+  color: #fff; /* Chữ trắng nếu cần */
   transition: transform 0.2s ease;
 }
 
@@ -70,14 +80,15 @@ section {
 .table th,
 .table td {
   background-color: #fff !important;
-  color: #fff9f9 !important;
+  color: #111 !important; /* Đổi lại thành màu đen */
 }
 
 .container .table {
-  background-color: #fff !important;
+  background-color: #eeeeee !important;
 }
 .container .table th,
 .container .table td {
   background-color: #fff !important;
   color: #000000 !important;
+  color: #111 !important; /* Đổi lại thành màu đen */
 }

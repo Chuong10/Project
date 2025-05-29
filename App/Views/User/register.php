@@ -3,10 +3,18 @@ $config = require 'config.php';
 $baseURL = $config['baseURL'];
 ?>
 
-<?php include './App/Views/Layout/homeHeader.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container mt-5 mb-5" style="max-width: 500px;">
-    <h2 class="text-center mb-4">📝 Đăng ký tài khoản</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="<?= $baseURL ?>assets/css/login.css"> <!-- Liên kết CSS riêng -->
+</head>
+
+<div class="login-container"> 
+    <h2> Đăng ký tài khoản</h2>
 
     <?php if (!empty($error)): ?>
         <div class="alert alert-danger"><?= $error ?></div>

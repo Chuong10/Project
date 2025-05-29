@@ -25,6 +25,9 @@ include './App/Views/Layout/homeheader.php';
 
             <table class="table table-bordered text-center align-middle cart-table">
                 <thead class="table-dark">
+=======
+            <table class="table table-bordered text-center align-middle">
+                <thead>
                     <tr>
                         <th>Tên sản phẩm</th>
                         <th>Giá</th>
@@ -32,7 +35,7 @@ include './App/Views/Layout/homeheader.php';
                         <th>Thành tiền</th>
                     </tr>
                 </thead>
-                <tbody class="table-light">
+                <tbody>
                     <?php foreach ($cartItems as $item): 
                         $total = $item['Price'] * $item['quantity'];
                         $grandTotal += $total;

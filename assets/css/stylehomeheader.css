@@ -33,7 +33,7 @@
   cursor: pointer;
   pointer-events: auto;
 }
-.custom-header {
+/* .custom-header {
   background-image: url("/Project/assets/images/BGheader.jpg");
   background-size: cover;
   background-position: center;
@@ -43,7 +43,7 @@
   min-height: 300px;
   display: flex;
   align-items: center;
-}
+} */
 .rainbow-button {
   background: linear-gradient(
     270deg,
