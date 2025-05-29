@@ -35,6 +35,8 @@ $assets = $config['assets'];
     <link href="<?= $base ?>assets/css/stylehome.css" rel="stylesheet" />
     <link href="<?= $base ?>assets/css/stylehomefooter.css" rel="stylesheet" />
 
+    <link href="<?= $base ?>assets/css/stylecartindex.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -53,7 +55,7 @@ $assets = $config['assets'];
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?= $baseURL?>/home/index">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?= $baseURL?>home/index">Home</a></li>
 
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
 
@@ -73,7 +75,7 @@ $assets = $config['assets'];
 
             <!-- Login/Logout -->
             <div class="d-flex align-items-center">
-                <?php if (isset($_SESSION['user_id'])): ?>
+                <?php if (isset($_SESSION['user_id']) || isset($_SESSION['admin'])): ?>
                     <a class="btn btn-outline-primary me-2" href="<?= $baseURL ?>user/logout">Logout</a>
                 <?php else: ?>
                     <a class="btn btn-outline-primary me-2" href="<?= $baseURL ?>user/login">Login</a>
@@ -101,7 +103,7 @@ $assets = $config['assets'];
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder">Shop For Terraria Wolrd</h1>
-                <p class="lead fw-normal mb-0" style="color:rgb(0, 0, 0);">With This Origin Terraria</p>
+                <p class="lead fw-normal mb-0" style="color:rgb(252, 251, 251);">With This Origin Terraria</p>
             </div>
         </div>
     </header>

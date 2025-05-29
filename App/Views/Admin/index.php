@@ -1,7 +1,6 @@
 <?php
 include_once __DIR__ . "/../Layout/homeheader.php";
 
-// var_dump($productList);
 
 ?>
 
