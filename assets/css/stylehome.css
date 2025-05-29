@@ -70,14 +70,14 @@ section {
 .table th,
 .table td {
   background-color: #fff !important;
-  color: #fff9f9 !important;
+  color: #111 !important;   /* Đổi lại thành màu đen */
 }
 
 .container .table {
-  background-color: #fff !important;
+  background-color: #eeeeee !important;
 }
 .container .table th,
 .container .table td {
   background-color: #fff !important;
-  color: #fff9f9 !important;
+  color: #111 !important;   /* Đổi lại thành màu đen */
 }
