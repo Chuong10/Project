@@ -1,0 +1,10 @@
+/Project
+  /assets
+    /css
+      style.css
+    /images
+      shirt1.jpg
+      shirt2.jpg
+      shirt3.jpg
+      shirt4.jpg
+  index.php
