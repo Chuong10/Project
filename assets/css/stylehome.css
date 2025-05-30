@@ -16,6 +16,8 @@ body {
   background-position: center;
 }
 
+
+
 /* .card {
   border: 1px solid #e1e1e1;
   transition: transform 0.2s ease;
@@ -29,7 +31,7 @@ body {
 /* Card sản phẩm kiểu Terraria.shop */
 .card {
   background: rgba(117, 215, 232, 0.1);
-  border-radius: 22px;
+  border-radius: 0; /* Góc vuông */
   box-shadow: 0 8px 32px rgba(21, 43, 233, 0.13);
   border: none;
   overflow: hidden;
@@ -44,10 +46,10 @@ body {
 }
 
 .card-img-top {
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
-  border-bottom-left-radius: 1;
-  border-bottom-right-radius: 1;
+  border-top-left-radius: 5;
+  border-top-right-radius: 5;
+  border-bottom-left-radius: 10;
+  border-bottom-right-radius: 10;
   height: 220px;
   object-fit: cover;
   margin-bottom: 1rem;
