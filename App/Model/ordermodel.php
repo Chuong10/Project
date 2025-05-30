@@ -38,6 +38,12 @@ class ordermodel
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function deleteOrder($orderId)
+    {
+        $stmt = $this->db->prepare("DELETE FROM orders WHERE id = ?");
+        $stmt->execute([$orderId]);
+    }
+
    
 }
     

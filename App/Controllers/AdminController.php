@@ -35,4 +35,24 @@ class AdminController
 
         include './App/Views/Admin/index.php'; 
     }
+
+    public function orders()
+    {
+        $orderModel = new OrderModel();
+        $orders = $orderModel->getAllOrders();
+
+        include './App/Views/Admin/orders.php';
+    }
+
+    public function deleteOrder()
+    {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['order_id'])) {
+            $orderModel = new OrderModel();
+            $orderModel->deleteOrder($_POST['order_id']);
+
+            $config = require './config.php';
+            header("Location: " . $config['baseURL'] . "admin/orders");
+            exit;
+        }
+    }
 }
