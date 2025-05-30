@@ -2,7 +2,6 @@
 include_once 'Layout/homeheader.php';
 ?>
 
-<body class="parallax-bg">
     <!-- Section: Products -->
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
@@ -44,17 +43,6 @@ include_once 'Layout/homefooter.php';
 
     <!-- Bootstrap core JS (CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-document.addEventListener('mousemove', function(e) {
-    const el = document.querySelector('.parallax-bg');
-    if (!el) return;
-    const x = e.clientX / window.innerWidth;
-    const y = e.clientY / window.innerHeight;
-    // Tăng hệ số để ảnh di chuyển sát theo chuột
-    const posX = x * 100;
-    const posY = y * 100;
-    el.style.backgroundPosition = `${posX}% ${posY}%, center center`;
-});
-</script>
+    <script src="<?= $base ?>assets/js/script.js"></script>
 
-</body>
+

@@ -25,6 +25,6 @@
         </div>
     </div>
 </div>
-
+<script src="<?= $base ?>assets/js/script.js"></script>
 <?php include './App/Views/Layout/homefooter.php'; ?>
 

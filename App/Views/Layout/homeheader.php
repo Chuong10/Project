@@ -82,7 +82,7 @@ rgb(149, 4, 193)
 </style>
 </head>
 
-<body>
+<body class="parallax-bg">
     
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg BGnavbar">

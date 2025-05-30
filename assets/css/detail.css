@@ -1,3 +1,13 @@
 h5 {
   font-family: Silkscreen, sans-serif !important;
 }
+.parallax-bg {
+  background-image: url("/PROJECT/assets/images/QueenSlime.jpg"),
+    /* lớp di chuyển theo chuột */
+      url("/PROJECT/assets/images/ronald-van-egdom-hallow3.jpg"); /* lớp nền chính */
+  background-size: 122px, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  transition: background-position 0.2s;
+}

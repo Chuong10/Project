@@ -8,18 +8,22 @@ section {
   padding-bottom: 2rem;
 }
 */
-@font-face {
-  font-family: "Pixel Operator";
-  src: url("/PROJECT/assets/fonts/PixelOperator.woff") format("woff");
-}
-
 body {
-  background-image: url("/PROJECT/assets/images/do-any-of-these-backgrounds-illicit-a-sense-of-longing-to-v0-oo2n2p0jd63b1.jpg");
-  background-size: cover;
+  /* background-image: url("/PROJECT/assets/images/do-any-of-these-backgrounds-illicit-a-sense-of-longing-to-v0-oo2n2p0jd63b1.jpg"); */
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* giữ cố định khi cuộn */
-  background-position: center;
-  font-family: "Pixel Operator", monospace !important;
+  background-attachment: fixed; 
+  background-position: center; */
+  font-family: monospace !important;
+
+  background-image: url("/PROJECT/assets/images/QueenSlime.jpg"),
+    /* lớp di chuyển theo chuột */
+      url("/PROJECT/assets/images/ronald-van-egdom-hallow3.jpg"); /* lớp nền chính */
+  background-size: 122px, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  transition: background-position 0.2s;
 }
 /* .card {
   border: 1px solid #e1e1e1;
@@ -149,16 +153,16 @@ body {
   color: #111 !important; /* Đổi lại thành màu đen */
 }
 
-.parallax-bg {
+/* .parallax-bg {
   background-image: url("/PROJECT/assets/images/QueenSlime.jpg"),
-    /* lớp di chuyển theo chuột */
-      url("/PROJECT/assets/images/ronald-van-egdom-hallow3.jpg"); /* lớp nền chính */
+    lớp di chuyển theo chuột
+      url("/PROJECT/assets/images/ronald-van-egdom-hallow3.jpg"); lớp nền chính
   background-size: 122px, cover;
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
   transition: background-position 0.2s;
-}
+} */
 
 .btn-purple {
   background-color: #a259e6;
