@@ -8,16 +8,19 @@ section {
   padding-bottom: 2rem;
 }
 */
+@font-face {
+  font-family: "Pixel Operator";
+  src: url("/PROJECT/assets/fonts/PixelOperator.woff") format("woff");
+}
+
 body {
-  background-image: url("/PROJECT/assets/images/do-any-of-these-backgrounds-illicit-a-sense-of-longing-to-v0-oo2n2p0jd63b1.jpg"); /* chỉnh lại đường dẫn ảnh của bạn */
+  background-image: url("/PROJECT/assets/images/do-any-of-these-backgrounds-illicit-a-sense-of-longing-to-v0-oo2n2p0jd63b1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* giữ cố định khi cuộn */
   background-position: center;
+  font-family: "Pixel Operator", monospace !important;
 }
-
-
-
 /* .card {
   border: 1px solid #e1e1e1;
   transition: transform 0.2s ease;
@@ -42,7 +45,7 @@ body {
 
 .card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 16px 40px rgba(44,62,80,0.18);
+  box-shadow: 0 16px 40px rgba(44, 62, 80, 0.18);
 }
 
 .card-img-top {
@@ -61,7 +64,7 @@ body {
 
 .card-title,
 .card .fw-bolder {
-  font-family: 'Fredoka', 'Montserrat', Arial, sans-serif;
+  font-family: "Fredoka", "Montserrat", Arial, sans-serif;
   font-weight: 700;
   font-size: 1.13rem;
   color: #f5f5f5;
@@ -93,7 +96,7 @@ body {
 .card .btn-outline-dark {
   border-radius: 8px;
   font-weight: 600;
-  font-family: 'Fredoka', 'Montserrat', Arial, sans-serif;
+  font-family: "Fredoka", "Montserrat", Arial, sans-serif;
   color: #0e9bd8;
   border: 2px solid #ffffff;
   transition: all 0.2s;
@@ -105,7 +108,7 @@ body {
   background: linear-gradient(90deg, #1c5dbe, #33bbe4);
   color: #fff;
   border-color: #0891e6;
-  box-shadow: 0 2px 12px rgba(44,62,80,0.13);
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.13);
 }
 
 /* Bảng giỏ hàng màu trắng */
@@ -116,7 +119,7 @@ body {
 .table tr,
 .table th,
 .table td {
-  background-color:#ecefef !important;
+  background-color: #ecefef !important;
   background-size: cover;
   background-position: center;
   color: #111 !important;

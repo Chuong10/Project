@@ -7,7 +7,7 @@ $assets = $config['assets'];
 include './App/Views/Layout/homeheader.php';
 ?>
 
-<link rel="stylesheet" href="/Project/assets/css/cart.css">
+<link rel="stylesheet" href="<?= $baseURL?>assets/css/cart.css">
 
 <!-- Section: Cart -->
 <section class="py-5">
