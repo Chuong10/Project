@@ -1,14 +1,17 @@
 <?php include './App/Views/Layout/homeHeader.php'; ?>
 
 <div class="container mt-5 mb-5 text-center bg-color">
-    <h2 class="text-success mb-4">🎉 Đặt hàng thành công!</h2>
+    <h2 class="text-muted mb-4"> Đặt hàng thành công!</h2>
     <p>Mã đơn hàng của bạn là: <strong>#<?= $orderId ?></strong></p>
-    <a href="<?= $baseURL ?>home/index" class="btn btn-primary mt-3">🏠 Quay về trang chủ</a>
+    <a href="<?= $baseURL ?>home/index" class="btn btn-primary mt-3">Quay về trang chủ</a>
 
 </div>
 ><style>
  .bg-color {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* nền gradient */
+  background-image: url('<?= $assets ?>/images/BGheader.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;   /* Căn giữa ảnh nền */
   color: #ffffff;
   padding: 2rem;
   border-radius: 16px;
