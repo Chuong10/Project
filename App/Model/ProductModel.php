@@ -22,12 +22,11 @@ class ProductModel
         $stmt->execute([$name, $price, $image]);
     }
 
-    public function deleteProduct($productId)
+    public function deleteProduct($Id)
     {
-        $sql = "DELETE  FROM products
-                WHERE Id = ?";
+        $sql = "DELETE  FROM products WHERE Id = ?";
         $stmt = $this->db->prepare($sql);
-        return $stmt->execute([$productId]);
+        return $stmt->execute([$Id]);
 
     }
 
