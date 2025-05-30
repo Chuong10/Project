@@ -39,6 +39,11 @@ include_once __DIR__ . "/../Layout/homeheader.php";
 
     </div>
 </div>
+<div class="text-center mt-5">
+    <a href="<?= $baseURL ?>admin/dashboard" class="btn btn-info">
+        Xem thống kê doanh thu theo ngày
+    </a>
+</div>
 
 <?php
 include_once __DIR__ . "/../Layout/homefooter.php";
