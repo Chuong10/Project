@@ -1,7 +1,7 @@
 <?php include './App/Views/Layout/homeheader.php'; ?>
 
 <div class="container mt-5 mb-5">
-    <h2 class="mb-4 text-center">📜 Lịch sử đơn hàng</h2>
+    <h2 class="mb-4 text-center">Lịch sử đơn hàng</h2>
 
     <?php if (empty($orders)): ?>
         <div class="alert alert-info text-center">Bạn chưa có đơn hàng nào.</div>

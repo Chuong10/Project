@@ -21,6 +21,12 @@ $baseURL = $config['baseURL'];
         <div class="alert alert-danger"><?= $error ?></div>
     <?php endif; ?>
 
+    <?php if (!empty($_SESSION['login_message'])): ?>
+        <div style="background:#ffe066;color:#222;padding:12px 0;text-align:center;font-weight:bold;">
+            <?= $_SESSION['login_message']; unset($_SESSION['login_message']); ?>
+        </div>
+    <?php endif; ?>
+
     <form action="<?= $baseURL ?>user/login" method="POST">
         <div class="mb-3">
             <label>Tên đăng nhập</label>
@@ -37,7 +43,7 @@ $baseURL = $config['baseURL'];
         Chưa có tài khoản? <a href="<?= $baseURL ?>user/register">Đăng ký</a>
     </div>
     <div class="text-center mt-4">
-    <button class="btn btn-outline-secondary" id="toggle-admin">🔑 Đăng ký admin</button>
+    <button class="btn btn-outline-secondary" id="toggle-admin">Đăng ký admin</button>
 
     <form action="<?= $baseURL ?>admin/register" method="POST" id="admin-form" style="display: none;" class="mt-3">
         <div class="mb-3">

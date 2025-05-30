@@ -2,6 +2,7 @@
 include_once 'Layout/homeheader.php';
 ?>
 
+<body class="parallax-bg">
     <!-- Section: Products -->
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
@@ -25,7 +26,7 @@ include_once 'Layout/homeheader.php';
                             <div class="text-center">
                                 <form method="post" action="<?= $baseURL . 'cart/add' ?>">
                                     <input type="hidden" name="product_id" value="<?= $product['Id'] ?>">
-                                    <button type="submit" class="btn btn-primary btn-sm">Add to Cart</button>
+                                    <button class="btn btn-purple btn-sm">Add to Cart</button>
                                 </form>
                             </div>
                         </div>
@@ -43,6 +44,17 @@ include_once 'Layout/homefooter.php';
 
     <!-- Bootstrap core JS (CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script>
+document.addEventListener('mousemove', function(e) {
+    const el = document.querySelector('.parallax-bg');
+    if (!el) return;
+    const x = e.clientX / window.innerWidth;
+    const y = e.clientY / window.innerHeight;
+    // Tăng hệ số để ảnh di chuyển sát theo chuột
+    const posX = x * 100;
+    const posY = y * 100;
+    el.style.backgroundPosition = `${posX}% ${posY}%, center center`;
+});
+</script>
 
 </body>

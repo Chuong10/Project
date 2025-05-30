@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row align-items-center gy-3">
             <div class="col-md-4 text-center text-md-start mb-2 mb-md-0">
-                <img src="/PROJECT/assets/images/QueenSlime.jpg" alt="Terraria Shop Logo" style="height:108px;">
+                <img src="/PROJECT/assets/images/tree.jpg" alt="Terraria Shop Logo" style="height:108px;">
             </div>
             <div class="col-md-4 text-center mb-2 mb-md-0">
                 <div class="footer-social">

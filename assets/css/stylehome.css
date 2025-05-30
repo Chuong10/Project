@@ -35,31 +35,32 @@ body {
 .card {
   background: rgba(117, 215, 232, 0.1);
   border-radius: 0; /* Góc vuông */
-  box-shadow: 0 8px 32px rgba(21, 43, 233, 0.13);
+  box-shadow: 0 8px 32px rgba(47, 46, 46, 0.765);
   border: none;
   overflow: hidden;
   transition: transform 0.18s, box-shadow 0.18s;
-  color: #21dcdc;
+  color: #f9f9f9;
   backdrop-filter: blur(2px);
 }
 
 .card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 16px 40px rgba(44, 62, 80, 0.18);
+  box-shadow: 0 16px 40px rgb(255, 254, 255);
 }
 
 .card-img-top {
-  border-top-left-radius: 5;
-  border-top-right-radius: 5;
-  border-bottom-left-radius: 10;
-  border-bottom-right-radius: 10;
+  border-radius: 0;
   height: 220px;
-  object-fit: cover;
+  width: 100%;
+  object-fit: cover; /* Ảnh phủ kín khung, không bị méo */
+  object-position: center center;
   margin-bottom: 1rem;
+  display: block;
+  background: none; /* Không cần nền trắng */
 }
 
 .card-body {
-  padding: 1.3rem 1.2rem 1rem 1.2rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .card-title,
@@ -73,17 +74,17 @@ body {
 }
 
 .product-price {
-  background: #6666d4;
-  color: #ecefef;
+  background: #c549eb;
+  color: #ffffff;
   font-size: 1.15rem;
   font-weight: bold;
   border-radius: 10px;
   padding: 0.18rem 1.1rem;
   margin: 0.5rem auto 0.7rem auto;
   letter-spacing: 1px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgb(190, 5, 227);
   display: inline-block;
-  border: 1.5px solid #13a6ea;
+  border: 1.5px solid #585558c6;
   text-align: center;
 }
 
@@ -97,7 +98,7 @@ body {
   border-radius: 8px;
   font-weight: 600;
   font-family: "Fredoka", "Montserrat", Arial, sans-serif;
-  color: #0e9bd8;
+  color: #9e09dd;
   border: 2px solid #ffffff;
   transition: all 0.2s;
   padding: 0.45rem 1.3rem;
@@ -105,10 +106,10 @@ body {
 }
 
 .card .btn-outline-dark:hover {
-  background: linear-gradient(90deg, #1c5dbe, #33bbe4);
+  background: linear-gradient(90deg, #b004ee, #ac33ed);
   color: #fff;
-  border-color: #0891e6;
-  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.13);
+  border-color: #ffffff;
+  box-shadow: 2 2px 12px rgb(255, 255, 255);
 }
 
 /* Bảng giỏ hàng màu trắng */
@@ -146,4 +147,20 @@ body {
   background-repeat: no-repeat;
   color: #000000 !important;
   color: #111 !important; /* Đổi lại thành màu đen */
+}
+
+.parallax-bg {
+  background-image: url("/PROJECT/assets/images/QueenSlime.jpg"),
+    /* lớp di chuyển theo chuột */
+      url("/PROJECT/assets/images/ronald-van-egdom-hallow3.jpg"); /* lớp nền chính */
+  background-size: 122px, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  transition: background-position 0.2s;
+}
+
+.btn-purple {
+  background-color: #a259e6;
+  color: #fff;
 }
