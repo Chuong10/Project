@@ -46,11 +46,11 @@ body {
 .card-img-top {
   border-top-left-radius: 22px;
   border-top-right-radius: 22px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  height: 210px;
+  border-bottom-left-radius: 1;
+  border-bottom-right-radius: 1;
+  height: 220px;
   object-fit: cover;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .card-body {
@@ -114,7 +114,7 @@ body {
 .table tr,
 .table th,
 .table td {
-  background-image: url("/Project/assets/images/BGheader.jpg") !important;
+  background-color:#ecefef !important;
   background-size: cover;
   background-position: center;
   color: #111 !important;
