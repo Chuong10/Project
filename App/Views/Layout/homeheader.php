@@ -38,7 +38,48 @@ $assets = $config['assets'];
     <link href="https://fonts.googleapis.com/css?family=Fredoka:700&display=swap" rel="stylesheet">
 
     <link href="<?= $base ?>assets/css/stylecartindex.css" rel="stylesheet" />
+<style>
+    .rainbow-button {
+  background: linear-gradient(
+    270deg,
+    #ff416c,
+    #ff4b2b,
+    #fffc00,
+    #00ff87,
+    #007cf0,
+    #7928ca,
+    #ff416c
+  );
+  background-size: 400% 400%;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 20px;
+  font-weight: bold;
+  animation: rainbowAnim 6s ease infinite;
+  transition: transform 0.3s ease;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  margin-right: 10px;
+  text-decoration: none;
+}
 
+.rainbow-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px white;
+}
+
+@keyframes rainbowAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+</style>
 </head>
 
 <body>

@@ -93,3 +93,16 @@
 .table * {
   color: #111 !important;
 }
+
+/* Tiêu đề giỏ hàng kiểu Fredoka */
+.cart-title,
+h1.cart-title,
+h1.gio-hang-title {
+    font-family: 'Fredoka', 'Montserrat', Arial, sans-serif !important;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #e1e6e3;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 8px rgba(10, 12, 11, 0.08);
+}

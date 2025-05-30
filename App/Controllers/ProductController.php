@@ -53,6 +53,15 @@ class ProductController
 
     public function detail($id)
     {
-      echo $id;   
+        $productModel = new ProductModel();
+        $product = $productModel->getProductById($id);
+
+        if (!$product) {
+            echo "Sản phẩm không tồn tại.";
+            return;
+        }
+
+        // Gửi sản phẩm sang view chi tiết
+        include './App/Views/Product/detail.php';
+    }  
     }
-}
