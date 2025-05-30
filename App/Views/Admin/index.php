@@ -4,10 +4,10 @@ include_once __DIR__ . "/../Layout/homeheader.php";
 
 ?>
 
-<div class="panel panel-default">
+<div class="panel panel-default admin-table-wrapper">
     <div class="panel-heading">Danh sách sản phẩm</div>
     <div class="panel-body">
-        <table class="table">
+        <table class="table-admin table-bordered text-white">
             <thead>
                 <tr>
                     <th>#</th>

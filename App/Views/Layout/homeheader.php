@@ -34,6 +34,7 @@ $assets = $config['assets'];
     <link href="<?= $base ?>assets/css/stylehomeheader.css" rel="stylesheet" />
     <link href="<?= $base ?>assets/css/stylehome.css" rel="stylesheet" />
     <link href="<?= $base ?>assets/css/stylehomefooter.css" rel="stylesheet" />
+    <link href="<?= $base ?>assets/css/styleadminindex.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Fredoka:700&display=swap" rel="stylesheet">
 
     <link href="<?= $base ?>assets/css/stylecartindex.css" rel="stylesheet" />
@@ -145,7 +146,7 @@ $assets = $config['assets'];
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder">Shop For Terraria Wolrd</h1>
-                <p class="lead fw-normal mb-0" style="color:rgb(0, 0, 0);">With This Origin Terraria</p>
+                <p class="lead fw-normal mb-0" style="color:rgb(255, 255, 255);">With This Origin Terraria</p>
             </div>
         </div>
     </header>

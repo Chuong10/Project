@@ -12,6 +12,7 @@ include './App/Views/Layout/homeheader.php';
 <!-- Section: Cart -->
 <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
+
         <h1 class="cart-title text-center">Giỏ hàng của bạn</h1>
         <?php if (empty($cartItems)): ?>
             <div class="alert alert-info text-center">
@@ -22,7 +23,6 @@ include './App/Views/Layout/homeheader.php';
 
             <table class="table table-bordered text-center align-middle cart-table">
                 <thead class="table-dark">
-=======
             <table class="table table-bordered text-center align-middle">
                 <thead>
                     <tr>
