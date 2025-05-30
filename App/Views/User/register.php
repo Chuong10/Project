@@ -10,7 +10,7 @@ $baseURL = $config['baseURL'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng nhập</title>
-    <link rel="stylesheet" href="<?= $baseURL ?>assets/css/login.css"> <!-- Liên kết CSS riêng -->
+    <link rel="stylesheet" href="<?= $baseURL ?>assets/css/login.css"> 
 </head>
 
 <div class="login-container"> 
@@ -33,12 +33,44 @@ $baseURL = $config['baseURL'];
             <label>Mật khẩu</label>
             <input type="password" name="password" class="form-control" required />
         </div>
-        <button type="submit" class="btn btn-success w-100">Đăng ký</button>
+        
+
+        <!-- đăng kí admin -->
+        <div class="mb-3">
+    <label>Đăng ký với vai trò:</label>
+    <select name="role" class="form-select" id="role-select">
+        <option value="user" selected>Người dùng</option>
+        <option value="admin">Quản trị viên</option>
+    </select>
+</div>
+
+<div id="internal-password" class="mb-3" style="display: none;">
+    <label>Mật khẩu nội bộ để đăng ký Admin</label>
+    <input type="password" name="internal_key" class="form-control" />
+</div>
+
+<button type="submit" class="btn btn-success w-100">Đăng ký</button>
     </form>
+
+
 
     <div class="text-center mt-3">
         Đã có tài khoản? <a href="<?= $baseURL ?>user/login">Đăng nhập</a>
     </div>
-</div>
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const roleSelect = document.getElementById('role-select');
+    const internalInput = document.getElementById('internal-password');
+    if (roleSelect && internalInput) {
+        roleSelect.addEventListener('change', function () {
+            internalInput.style.display = this.value === 'admin' ? 'block' : 'none';
+        });
+    }
+});
+</script>
+
+
 
 <?php include './App/Views/Layout/homeFooter.php'; ?>

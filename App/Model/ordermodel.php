@@ -8,12 +8,12 @@ class ordermodel
     {
         $this->db = Database::connect();
     }
-    public function getAllOrders()
-    {
-        $stmt = $this->db->prepare("SELECT * FROM orders ORDER BY id ASC");
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
+    // public function getAllOrders()
+    // {
+    //     $stmt = $this->db->prepare("SELECT * FROM orders ORDER BY id ASC");
+    //     $stmt->execute();
+    //     return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    // }
     public function createOrder($userId, $totalAmount)
     {
         $sql = "INSERT INTO orders (user_id, total_amount, status) VALUES (?, ?, 'Đặt hàng')";
@@ -43,6 +43,24 @@ class ordermodel
         $stmt = $this->db->prepare("DELETE FROM orders WHERE id = ?");
         $stmt->execute([$orderId]);
     }
+
+    public function deleteOrderById($id)
+{
+    // Xóa các item liên quan trước
+    $stmt = $this->db->prepare("DELETE FROM order_items WHERE order_id = ?");
+    $stmt->execute([$id]);
+
+    // Sau đó mới xóa order
+    $stmt = $this->db->prepare("DELETE FROM orders WHERE id = ?");
+    $stmt->execute([$id]);
+}
+
+public function getAllOrders()
+{
+    $stmt = $this->db->prepare("SELECT id, user_id, total_amount, order_date FROM orders ORDER BY id DESC");
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
 
    
 }

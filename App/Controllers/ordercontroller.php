@@ -58,5 +58,37 @@ public function checkout()
        include './App/Views/Order/history.php';
    }
 
+   public function manageOrders()
+{
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+
+    // Kiểm tra admin quyền
+    if ($_SESSION['role'] !== 'admin') {
+        die("Bạn không có quyền truy cập!");
+    }
+
+    $orderModel = new OrderModel();
+    $orders = $orderModel->getAllOrders();
+
+    include './App/Views/Admin/index.php'; 
+}
+
+public function deleteOrder()
+{
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['order_id'])) {
+        $orderId = $_POST['order_id'];
+
+        $orderModel = new OrderModel();
+        $orderModel->deleteOrderById($orderId);
+
+        $config = require './config.php';
+        header("Location: " . $config['baseURL'] . "order/manageOrders");
+        exit;
+    }
+}
+
+
 }
 ?>

@@ -1,6 +1,6 @@
 <?php
 require_once './App/Model/ProductModel.php';
-
+require_once __DIR__ . '/../Model/OrderModel.php';
 
 class AdminController
 {
@@ -21,7 +21,7 @@ class AdminController
                 header("Location: " . $baseURL . "admin/index");
                 exit;
             } else {
-                $error = "❌ Mật khẩu nội bộ không đúng.";
+                $error = "Mật khẩu nội bộ không đúng.";
             }
         }
 
@@ -30,8 +30,11 @@ class AdminController
 
     public function index()
     {
-        $productModel = new ProductModel();                 
+        $productModel = new ProductModel();    
+        $orderModel = new OrderModel();
+
         $productList = $productModel->getAllProducts(); 
+        $orders = $orderModel->getAllOrders();
 
         include './App/Views/Admin/index.php'; 
     }
@@ -41,7 +44,10 @@ class AdminController
         $orderModel = new OrderModel();
         $orders = $orderModel->getAllOrders();
 
-        include './App/Views/Admin/orders.php';
+        $config = require './config.php';
+        $baseURL = $config['baseURL'];
+
+        include './App/Views/Admin/index.php';
     }
 
     public function deleteOrder()
