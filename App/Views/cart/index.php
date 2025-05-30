@@ -30,6 +30,7 @@ include './App/Views/Layout/homeheader.php';
                         <th>Giá</th>
                         <th>Số lượng</th>
                         <th>Thành tiền</th>
+                        <th>Loại bỏ</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,6 +43,12 @@ include './App/Views/Layout/homeheader.php';
                             <td><?= number_format($item['Price'], 3) ?> VNĐ</td>
                             <td><?= $item['quantity'] ?></td>
                             <td><?= number_format($total, 3) ?> VNĐ</td>
+                            <td>
+                                <form method="post" action="<?= $baseURL ?>cart/remove">
+                                    <input type="hidden" name="product_id" value="<?= $item['product_id'] ?? $item['Id'] ?>">
+                                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Bạn chắc chắn muốn xóa sản phẩm này?')">Xóa</button>
+                                </form>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
@@ -49,6 +56,7 @@ include './App/Views/Layout/homeheader.php';
                     <tr class="table-secondary">
                         <th colspan="3" class="text-end">Tổng cộng:</th>
                         <th><?= number_format($grandTotal, 3) ?> VNĐ</th>
+                        <th></th> <!-- Thêm dòng này để ô cuối cùng là màu trắng và không có logo -->
                     </tr>
                 </tfoot>
             </table>
@@ -62,3 +70,4 @@ include './App/Views/Layout/homeheader.php';
 </section>
 
 <?php include './App/Views/Layout/homefooter.php'; ?>
+

@@ -13,7 +13,7 @@
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-  color: #ffcc00 !important;
+  color: #ab0fe8 !important;
 }
 
 .dropdown-menu {
@@ -47,18 +47,18 @@
 } */
 
 .navbar-brand {
-  color: black !important;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  color: #a827e4 !important; /* Màu tím */
+  font-weight: bold;
 }
 /* Tùy chỉnh màu chữ navbar */
 .navbar-nav .nav-link {
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
   font-size: 1.1rem;
 }
 
 /* Xóa màu vàng mặc định của Bootstrap khi link đang active */
 .navbar-nav .nav-link.active {
-  color: black !important;
+  color: rgba(178, 16, 231, 0.986) !important;
   font-weight: bold;
   background-color: transparent !important; /* !important để ghi đè */
 }

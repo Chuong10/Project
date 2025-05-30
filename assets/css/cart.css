@@ -34,6 +34,14 @@
   border-top: 2px solid #e0e0e0;
 }
 
+/* Đảm bảo ô cuối cùng của dòng tổng cộng là màu trắng */
+.table tfoot th,
+.table tfoot td {
+  background: #fff !important;
+  color: #111 !important;
+  box-shadow: none !important;
+}
+
 /* Tên sản phẩm kiểu Fredoka */
 .table td h5,
 .table td .product-title {
@@ -57,7 +65,7 @@
 /* Nút thanh toán nổi bật */
 .btn-secondary,
 .shop-button {
-  background: linear-gradient(90deg, #277aae, #22e6e3);
+  background: linear-gradient(90deg, #9405e1, #b806ea);
   color: #fff !important;
   border: none;
   border-radius: 8px;
@@ -70,19 +78,104 @@
 }
 .btn-secondary:hover,
 .shop-button:hover {
-  background: #96bace;
+  background: #a834ec;
   color: #fff !important;
-  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.13);
+  box-shadow: 0 4px 16px rgba(88, 6, 241, 0.13);
+}
+
+/* Đảm bảo cột Xóa nền trắng, không nền đỏ */
+.table td:last-child,
+.table th:last-child {
+  background: #fff !important;
+  box-shadow: none !important;
+}
+
+/* Nút Xóa luôn đỏ, không nền trắng */
+.table .btn-danger {
+  background: #a11fec !important;
+  border: none;
+  color: #fff !important;
+  border-radius: 6px;
+  padding: 0.35rem 1.2rem;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.table .btn-danger:hover {
+  background: #8515e6 !important;
+}
+
+/* Giao diện bảng giỏ hàng đẹp hơn */
+.table.cart-table {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  font-family: "Fredoka", "Montserrat", Arial, sans-serif;
+}
+
+.table.cart-table th,
+.table.cart-table td {
+  background: transparent !important;
+  color: #222 !important;
+  vertical-align: middle;
+  font-size: 1.09rem;
+  border: none;
+  padding: 1.1rem 0.7rem;
+  transition: background 0.2s;
+}
+
+.table.cart-table thead th {
+  background: rgba(200, 80, 255, 0.13) !important;
+  color: #7c2ae8 !important;
+  font-weight: 700;
+  font-size: 1.15rem;
+  border-bottom: 2px solid #e0e0e0;
+  letter-spacing: 1px;
+}
+
+.table.cart-table tbody tr:hover {
+  background: rgba(180, 120, 255, 0.1) !important;
+  transition: background 0.2s;
+}
+
+.table.cart-table tfoot th,
+.table.cart-table tfoot td {
+  background: #f8f6ff !important;
+  color: #7c2ae8 !important;
+  font-weight: bold;
+  font-size: 1.15rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.table.cart-table td:last-child,
+.table.cart-table th:last-child {
+  background: transparent !important;
+}
+
+.table.cart-table .btn-danger {
+  background: linear-gradient(90deg, #a259e6, #b806ea);
+  border: none;
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 0.35rem 1.2rem;
+  font-weight: bold;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(162, 89, 230, 0.13);
+}
+.table.cart-table .btn-danger:hover {
+  background: #8515e6 !important;
+  box-shadow: 0 4px 16px rgba(162, 89, 230, 0.18);
 }
 
 /* Responsive cho bảng */
 @media (max-width: 768px) {
-  .table th,
-  .table td {
+  .table.cart-table th,
+  .table.cart-table td {
     font-size: 0.97rem;
     padding: 0.7rem 0.3rem;
   }
-  .table img,
+  .table.cart-table img,
   .img-thumbnail {
     width: 48px;
     height: 48px;
@@ -98,11 +191,19 @@
 .cart-title,
 h1.cart-title,
 h1.gio-hang-title {
-    font-family: 'Fredoka', 'Montserrat', Arial, sans-serif !important;
-    font-weight: 700;
-    font-size: 2.2rem;
-    color: #e1e6e3;
-    letter-spacing: 1px;
-    margin-bottom: 2rem;
-    text-shadow: 0 2px 8px rgba(10, 12, 11, 0.08);
+  font-family: "Fredoka", "Montserrat", Arial, sans-serif !important;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #e1e6e3;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(10, 12, 11, 0.08);
+}
+
+body {
+  background-image: url("/PROJECT/assets/images/ronald-van-egdom-hallow3.jpg") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
 }

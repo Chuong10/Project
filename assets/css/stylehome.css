@@ -14,7 +14,7 @@ section {
 }
 
 body {
-  background-image: url("/PROJECT/assets/images/do-any-of-these-backgrounds-illicit-a-sense-of-longing-to-v0-oo2n2p0jd63b1.jpg");
+  background-image: url("/PROJECT/assets/images/ronald-van-egdom-hallow3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* giữ cố định khi cuộn */
@@ -45,7 +45,7 @@ body {
 
 .card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 16px 40px rgb(255, 254, 255);
+  box-shadow: 0 16px 40px rgb(154, 21, 225);
 }
 
 .card-img-top {

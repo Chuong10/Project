@@ -53,4 +53,21 @@ class CartController
             exit;
         }
     }
+    public function remove()
+    {
+        if (isset($_POST['product_id'])) {
+            $productId = $_POST['product_id'];
+            foreach ($_SESSION['cart'] as $key => $item) {
+                if ($item['product_id'] == $productId) {
+                    unset($_SESSION['cart'][$key]);
+                    break;
+                }
+            }
+            // Sắp xếp lại mảng
+            $_SESSION['cart'] = array_values($_SESSION['cart']);
+        }
+        $config = require './config.php';
+        header("Location: " . $config['baseURL'] . "cart/index");
+        exit;
+    }
 }
