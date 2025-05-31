@@ -87,6 +87,9 @@ rgb(149, 4, 193)
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg BGnavbar">
     <div class="container px-4 px-lg-5">
+        <?php if (isset($_SESSION['user_id'])): ?>
+            <img src="<?= $baseURL ?>assets/images/34-340027_user-login-man-human-body-mobile-person-comments-person-icon-png.jpg" alt="User Avatar" class="navbar-avatar me-2">
+        <?php endif; ?>
         <a class="navbar-brand" href="#">Terraria Products</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"

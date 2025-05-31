@@ -40,8 +40,10 @@ $baseURL = $config['baseURL'];
     </form>
     
          <!-- admin đăng kí -->
-    <div class="text-center mt-3">
-        Chưa có tài khoản? <a href="<?= $baseURL ?>user/register">Đăng ký</a>
+    <div class="text-center mt-3 d-flex justify-content-center gap-2">
+        <span>Chưa có tài khoản?</span>
+        <a href="<?= $baseURL ?>user/register" class="btn btn-link p-0">Đăng ký</a>
+        <a href="<?= $baseURL ?>home/index" class="btn btn-secondary btn-sm ms-2">Quay lại trang chủ</a>
     </div>
 </div>
 

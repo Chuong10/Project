@@ -165,3 +165,12 @@ body {
   background-color: #a259e6;
   color: #fff;
 }
+
+.navbar-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #a259e6;
+    background: #fff;
+}
