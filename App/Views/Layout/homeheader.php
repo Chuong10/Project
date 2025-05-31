@@ -108,7 +108,7 @@ rgb(149, 4, 193)
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">All Products</a></li>
+                        <li><a class="dropdown-item" href="<?= $baseURL?>/home/index">All Products</a></li>
                         <li><a class="dropdown-item" href="#">Popular Items</a></li>
                         <li><a class="dropdown-item" href="#">New Arrivals</a></li>
                     </ul>
