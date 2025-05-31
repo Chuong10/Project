@@ -47,3 +47,5 @@ include_once __DIR__ . "/../Layout/homeheader.php";
 
 <?php
 include_once __DIR__ . "/../Layout/homefooter.php";
+?>
+<script src="<?= $base ?>assets/js/script.js"></script>
