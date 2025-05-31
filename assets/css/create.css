@@ -1,0 +1,11 @@
+
+.btn-success {
+    background: linear-gradient(90deg, #a259e6, #b806ea);
+    color: #fff !important;
+    border: none;
+    font-weight: bold;
+}
+.btn-success:hover {
+    background: #7c2ae8;
+    color: #fff !important;
+}

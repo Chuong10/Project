@@ -30,7 +30,7 @@ $assets = $config['assets'];
     <!-- Core theme CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    
+    <link href="<?= $base ?>assets/css/create.css" rel="stylesheet" />
     <link href="<?= $base ?>assets/css/stylehomeheader.css" rel="stylesheet" />
     <link href="<?= $base ?>assets/css/stylehome.css" rel="stylesheet" />
     <link href="<?= $base ?>assets/css/stylehomefooter.css" rel="stylesheet" />
