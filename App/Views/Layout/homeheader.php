@@ -82,7 +82,7 @@ rgb(149, 4, 193)
 </style>
 </head>
 
-<body>
+<body class="parallax-bg">
     
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg BGnavbar">
@@ -114,7 +114,24 @@ rgb(149, 4, 193)
                     </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+
+                
+                <!--add,delete product only for admin-->
+            <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="manageDropdown" role="button"
+           data-bs-toggle="dropdown" aria-expanded="false">
+            Manage Product
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="manageDropdown">
+            <li><a class="dropdown-item" href="<?= $baseURL ?>product/create">Add Product</a></li>
+            <li><a class="dropdown-item" href="<?= $baseURL ?>product/manage">Delete Product</a></li>
+        </ul>
+    </li>
+<?php endif; ?>
             </ul>
+
+
 
             <!-- Login/Logout -->
             <div class="d-flex align-items-center">

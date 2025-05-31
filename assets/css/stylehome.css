@@ -8,18 +8,19 @@ section {
   padding-bottom: 2rem;
 }
 */
-@font-face {
-  font-family: "Pixel Operator";
-  src: url("/PROJECT/assets/fonts/PixelOperator.woff") format("woff");
-}
-
 body {
-  background-image: url("/PROJECT/assets/images/ronald-van-egdom-hallow3.jpg");
+  /* background-image: url("/PROJECT/assets/images/do-any-of-these-backgrounds-illicit-a-sense-of-longing-to-v0-oo2n2p0jd63b1.jpg"); */
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: center; */
+  font-family: monospace !important;
+
+  background-image: url("/PROJECT/assets/images/ronald-van-egdom-hallow3.jpg"); 
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* giữ cố định khi cuộn */
+  background-attachment: fixed;
   background-position: center;
-  font-family: "Pixel Operator", monospace !important;
 }
 /* .card {
   border: 1px solid #e1e1e1;

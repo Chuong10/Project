@@ -8,7 +8,7 @@
 </div>
 ><style>
  .bg-color {
-  background-image: url('<?= $assets ?>/images/ronald-van-egdom-corruption720p.jpg');
+  background-image: url('<?= $assets ?>/images/qqyRoE8.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;   /* Căn giữa ảnh nền */

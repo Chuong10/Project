@@ -61,4 +61,18 @@ class AdminController
             exit;
         }
     }
+    public function dashboard()
+    {
+         require_once __DIR__ . '/../Model/OrderModel.php';
+
+        $orderModel = new OrderModel();
+        $revenues = $orderModel->getRevenueByDate();
+        $dailyRevenue = $orderModel->getRevenueByDate();
+
+        $config = require './config.php';
+        $baseURL = $config['baseURL'];
+
+        include './App/Views/Admin/dashboard.php';
+    }
+
 }

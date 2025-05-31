@@ -61,6 +61,17 @@ public function getAllOrders()
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+public function getRevenueByDate()
+{
+    $sql = "SELECT DATE(order_date) as order_date, SUM(total_amount) as total_revenue
+            FROM orders
+            GROUP BY DATE(order_date)
+            ORDER BY order_date DESC";
+            
+    $stmt = $this->db->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
 
    
 }
